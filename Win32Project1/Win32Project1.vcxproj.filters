@@ -13,6 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ソース ファイル\State">
+      <UniqueIdentifier>{92e51bd7-41c6-4af6-aa71-195cfa8646d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\State">
+      <UniqueIdentifier>{b7393e7c-5ec5-4f50-9a9b-ff5ce6143c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{5f72ba3d-7834-4fbd-be91-a1de4649ee38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scene">
+      <UniqueIdentifier>{cc53b6da-619a-4ee0-ae91-c95b3f7efb56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Actor">
+      <UniqueIdentifier>{80491581-2a4a-4b6e-9d8c-11c5f9a8d91e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Actor">
+      <UniqueIdentifier>{ef23053a-9f89-459a-9260-7f72c4cf22fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scene\Battle">
+      <UniqueIdentifier>{3781c23e-d7b6-4eac-a482-28d3808218ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\Battle">
+      <UniqueIdentifier>{562f5b8e-7565-47e5-af86-74b795a589db}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,10 +45,100 @@
     <ClCompile Include="GameMain.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="FPS.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Angle.cpp">
+      <Filter>ソース ファイル\State</Filter>
+    </ClCompile>
+    <ClCompile Include="HitPoint.cpp">
+      <Filter>ソース ファイル\State</Filter>
+    </ClCompile>
+    <ClCompile Include="MagicPoint.cpp">
+      <Filter>ソース ファイル\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>ソース ファイル\State</Filter>
+    </ClCompile>
+    <ClCompile Include="vector2.cpp">
+      <Filter>ソース ファイル\State</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneTitle.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneManager.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ActorThina.cpp">
+      <Filter>ソース ファイル\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Select.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuList.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneBattle.cpp">
+      <Filter>ソース ファイル\Scene\Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameMain.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="FPS.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="IUnit.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Angle.h">
+      <Filter>ヘッダー ファイル\State</Filter>
+    </ClInclude>
+    <ClInclude Include="HitPoint.h">
+      <Filter>ヘッダー ファイル\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>ヘッダー ファイル\State</Filter>
+    </ClInclude>
+    <ClInclude Include="MagicPoint.h">
+      <Filter>ヘッダー ファイル\State</Filter>
+    </ClInclude>
+    <ClInclude Include="vector2.h">
+      <Filter>ヘッダー ファイル\State</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneManager.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneTitle.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ActorThina.h">
+      <Filter>ヘッダー ファイル\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Select.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuList.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneBattle.h">
+      <Filter>ヘッダー ファイル\Scene\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ITask.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="baseScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ISceneChanger.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

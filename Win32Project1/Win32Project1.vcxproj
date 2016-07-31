@@ -23,20 +23,21 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Win32Project1</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>RPGTest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -89,12 +90,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\DxLib\DxLib_VC_3.16d;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\DxLib\DxLib_VC_3_16d;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\DxLib\DxLib_VC_3.16d;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\DxLib\DxLib_VC_3_16d;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -124,14 +126,15 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\DxLib\DxLib_VC_3.16d;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\DxLib\DxLib_VC_3_16d;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\DxLib\DxLib_VC_3.16d;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\DxLib\DxLib_VC_3_16d;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -156,11 +159,41 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ActorThina.cpp" />
+    <ClCompile Include="Angle.cpp" />
+    <ClCompile Include="HitPoint.cpp" />
+    <ClCompile Include="MagicPoint.cpp" />
+    <ClCompile Include="MenuList.cpp" />
+    <ClCompile Include="Select.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="UnitManager.cpp" />
+    <ClCompile Include="vector2.cpp" />
+    <ClCompile Include="sceneManager.cpp" />
+    <ClCompile Include="FPS.cpp" />
     <ClCompile Include="GameMain.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="sceneTitle.cpp" />
+    <ClCompile Include="sceneBattle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ActorThina.h" />
+    <ClInclude Include="Angle.h" />
+    <ClInclude Include="FPS.h" />
     <ClInclude Include="GameMain.h" />
+    <ClInclude Include="HitPoint.h" />
+    <ClInclude Include="ISceneChanger.h" />
+    <ClInclude Include="ITask.h" />
+    <ClInclude Include="IUnit.h" />
+    <ClInclude Include="MagicPoint.h" />
+    <ClInclude Include="MenuList.h" />
+    <ClInclude Include="Select.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="UnitManager.h" />
+    <ClInclude Include="vector2.h" />
+    <ClInclude Include="sceneManager.h" />
+    <ClInclude Include="baseScene.h" />
+    <ClInclude Include="sceneTitle.h" />
+    <ClInclude Include="sceneBattle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
