@@ -1,6 +1,8 @@
 #include "GameMain.h"
 
 GameMain::GameMain(){
+	mFps.reset(new FPS());
+	mInput.reset(new Input());
 	mSceneMgr.reset(new CSceneManager());
 }
 
@@ -14,7 +16,8 @@ void GameMain::Initialize() {
 }
 
 void GameMain::Update() {
-	mSceneMgr->Update();
+	mSceneMgr->Update(mInput);
+	mFps->Wait();
 }
 
 void GameMain::Draw() {
@@ -26,6 +29,7 @@ void GameMain::Finalize() {
 }
 
 bool GameMain::IsEnd() {
-	if(mSceneMgr->IsEnd()) return false;
+	if (mInput->All()) return false;
+	if (mSceneMgr->IsEnd()) return false;
 	return true;
 }

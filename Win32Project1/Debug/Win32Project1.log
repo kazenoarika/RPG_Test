@@ -1,3 +1,9 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Win32Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  GameMain.cpp
-  Win32Project1.vcxproj -> C:\Users\Arika\Documents\Visual Studio 2015\Projects\RPG_Test\Debug\RPGTest.exe
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (RPGTest.vcxproj, Win32Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  sceneTitle.cpp
+  MenuStart.cpp
+  MenuList.cpp
+  コードを生成中...
+  コンパイル中...
+  sceneManager.cpp
+  コードを生成中...
+  Win32Project1.vcxproj -> C:\Users\Arika\Documents\Visual Studio 2015\Projects\AirBreakers\Debug\AirBreakers.exe

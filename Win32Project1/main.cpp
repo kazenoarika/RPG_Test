@@ -23,7 +23,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		16
 	) != DX_CHANGESCREEN_OK) return -1;	// ウィンドウサイズを変更する
 	if (ChangeWindowMode(TRUE) != DX_CHANGESCREEN_OK) return -1; //ウィンドウ化と初期化処理
-																 //	if( SetWindowIconID( MAINICON )) return -1;
+//	if( SetWindowIconID( MAINICON )) return -1;
 	if (DxLib_Init() == -1 || SetDrawScreen(DX_SCREEN_BACK) != 0) return -1;		//描画先を裏画面に設定
 	SetDrawMode(DX_DRAWMODE_BILINEAR);
 

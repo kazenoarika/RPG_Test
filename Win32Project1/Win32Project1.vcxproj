@@ -21,9 +21,9 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{ABC886ED-0A93-4652-BEC9-506DEAEEB0CD}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Win32Project1</RootNamespace>
+    <RootNamespace>AirBreakers</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>RPGTest</ProjectName>
+    <ProjectName>AirBreakers</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -159,12 +159,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ActorThina.cpp" />
     <ClCompile Include="Angle.cpp" />
+    <ClCompile Include="BackGround.cpp" />
+    <ClCompile Include="BaseMenu.cpp" />
+    <ClCompile Include="BaseObject.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="CreateGameObject.cpp" />
+    <ClCompile Include="EqipmentSubWepon.cpp" />
     <ClCompile Include="HitPoint.cpp" />
+    <ClCompile Include="Hostility.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="LastClearedStageNumber.cpp" />
+    <ClCompile Include="Life.cpp" />
     <ClCompile Include="MagicPoint.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="MenuContinue.cpp" />
     <ClCompile Include="MenuList.cpp" />
+    <ClCompile Include="MenuStart.cpp" />
+    <ClCompile Include="Money.cpp" />
+    <ClCompile Include="PlayerData.cpp" />
+    <ClCompile Include="PlayerUnit.cpp" />
+    <ClCompile Include="PlayerUnitData.cpp" />
+    <ClCompile Include="PlayObjectManager.cpp" />
+    <ClCompile Include="Score.cpp" />
     <ClCompile Include="Select.cpp" />
+    <ClCompile Include="StageScore.cpp" />
+    <ClCompile Include="SubWepon.cpp" />
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="UnitManager.cpp" />
     <ClCompile Include="vector2.cpp" />
@@ -176,17 +198,41 @@
     <ClCompile Include="sceneBattle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ActorThina.h" />
     <ClInclude Include="Angle.h" />
+    <ClInclude Include="BackGround.h" />
+    <ClInclude Include="BaseMenu.h" />
+    <ClInclude Include="BaseObject.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="CreateGameObject.h" />
+    <ClInclude Include="EqipmentSubWepon.h" />
     <ClInclude Include="FPS.h" />
     <ClInclude Include="GameMain.h" />
     <ClInclude Include="HitPoint.h" />
+    <ClInclude Include="Hostility.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="IMenu.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="IObject.h" />
     <ClInclude Include="ISceneChanger.h" />
     <ClInclude Include="ITask.h" />
     <ClInclude Include="IUnit.h" />
+    <ClInclude Include="LastClearedStageNumber.h" />
+    <ClInclude Include="Life.h" />
     <ClInclude Include="MagicPoint.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="MenuContinue.h" />
     <ClInclude Include="MenuList.h" />
+    <ClInclude Include="MenuStart.h" />
+    <ClInclude Include="Money.h" />
+    <ClInclude Include="PlayerData.h" />
+    <ClInclude Include="PlayerUnit.h" />
+    <ClInclude Include="PlayerUnitData.h" />
+    <ClInclude Include="PlayObjectManager.h" />
+    <ClInclude Include="Score.h" />
     <ClInclude Include="Select.h" />
+    <ClInclude Include="StageScore.h" />
+    <ClInclude Include="SubWepon.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="UnitManager.h" />
     <ClInclude Include="vector2.h" />

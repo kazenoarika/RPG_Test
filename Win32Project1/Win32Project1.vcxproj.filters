@@ -25,17 +25,38 @@
     <Filter Include="ヘッダー ファイル\Scene">
       <UniqueIdentifier>{cc53b6da-619a-4ee0-ae91-c95b3f7efb56}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Actor">
-      <UniqueIdentifier>{80491581-2a4a-4b6e-9d8c-11c5f9a8d91e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Actor">
-      <UniqueIdentifier>{ef23053a-9f89-459a-9260-7f72c4cf22fd}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ヘッダー ファイル\Scene\Battle">
       <UniqueIdentifier>{3781c23e-d7b6-4eac-a482-28d3808218ee}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\Scene\Battle">
       <UniqueIdentifier>{562f5b8e-7565-47e5-af86-74b795a589db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object">
+      <UniqueIdentifier>{0d9b7cba-489c-4a81-bfed-fbf936da8975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\Battle\Bullet">
+      <UniqueIdentifier>{cde61873-0a0f-413b-a5f6-723249b9e187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object">
+      <UniqueIdentifier>{ef23053a-9f89-459a-9260-7f72c4cf22fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scene\Battle\Bullet">
+      <UniqueIdentifier>{8af12412-46af-4250-99da-0257ccc8f90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameData">
+      <UniqueIdentifier>{99c27f98-6492-4af9-9382-b2d305fce575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\GameData">
+      <UniqueIdentifier>{1d193f69-2e03-493a-b048-37d920b8f57b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\Title">
+      <UniqueIdentifier>{d6313472-32ba-42df-b315-1e2bc50876c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\Title\Title">
+      <UniqueIdentifier>{596b7a39-b388-4b4a-965a-7e7631777ec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scene\Title">
+      <UniqueIdentifier>{377d565b-646b-49b6-b198-e35f4c219179}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -63,14 +84,8 @@
     <ClCompile Include="vector2.cpp">
       <Filter>ソース ファイル\State</Filter>
     </ClCompile>
-    <ClCompile Include="sceneTitle.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
     <ClCompile Include="sceneManager.cpp">
       <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="ActorThina.cpp">
-      <Filter>ソース ファイル\Actor</Filter>
     </ClCompile>
     <ClCompile Include="Select.cpp">
       <Filter>ソース ファイル</Filter>
@@ -81,7 +96,79 @@
     <ClCompile Include="sceneBattle.cpp">
       <Filter>ソース ファイル\Scene\Battle</Filter>
     </ClCompile>
+    <ClCompile Include="BaseObject.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>ソース ファイル\Scene\Battle\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Hostility.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="EqipmentSubWepon.cpp">
+      <Filter>ソース ファイル\GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="LastClearedStageNumber.cpp">
+      <Filter>ソース ファイル\GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>ソース ファイル\GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="Money.cpp">
+      <Filter>ソース ファイル\GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerData.cpp">
+      <Filter>ソース ファイル\GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerUnitData.cpp">
+      <Filter>ソース ファイル\GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="Score.cpp">
+      <Filter>ソース ファイル\GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="StageScore.cpp">
+      <Filter>ソース ファイル\GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="SubWepon.cpp">
+      <Filter>ソース ファイル\GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneTitle.cpp">
+      <Filter>ソース ファイル\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Life.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerUnit.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayObjectManager.cpp">
+      <Filter>ソース ファイル\Scene\Battle</Filter>
+    </ClCompile>
     <ClCompile Include="UnitManager.cpp">
+      <Filter>ソース ファイル\Scene\Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateGameObject.cpp">
+      <Filter>ソース ファイル\Scene\Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="BackGround.cpp">
+      <Filter>ソース ファイル\Scene\Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseMenu.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuStart.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuContinue.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -90,9 +177,6 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="FPS.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="IUnit.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="Angle.h">
@@ -113,12 +197,6 @@
     <ClInclude Include="sceneManager.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="sceneTitle.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="ActorThina.h">
-      <Filter>ヘッダー ファイル\Actor</Filter>
-    </ClInclude>
     <ClInclude Include="Select.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
@@ -128,9 +206,6 @@
     <ClInclude Include="sceneBattle.h">
       <Filter>ヘッダー ファイル\Scene\Battle</Filter>
     </ClInclude>
-    <ClInclude Include="UnitManager.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ITask.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
@@ -139,6 +214,90 @@
     </ClInclude>
     <ClInclude Include="ISceneChanger.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseObject.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>ヘッダー ファイル\Scene\Battle\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="IObject.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="EqipmentSubWepon.h">
+      <Filter>ヘッダー ファイル\GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="Hostility.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerData.h">
+      <Filter>ヘッダー ファイル\GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="StageScore.h">
+      <Filter>ヘッダー ファイル\GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="SubWepon.h">
+      <Filter>ヘッダー ファイル\GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="Score.h">
+      <Filter>ヘッダー ファイル\GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerUnitData.h">
+      <Filter>ヘッダー ファイル\GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="Money.h">
+      <Filter>ヘッダー ファイル\GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="LastClearedStageNumber.h">
+      <Filter>ヘッダー ファイル\GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneTitle.h">
+      <Filter>ヘッダー ファイル\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="BackGround.h">
+      <Filter>ヘッダー ファイル\Scene\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateGameObject.h">
+      <Filter>ヘッダー ファイル\Scene\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="IUnit.h">
+      <Filter>ヘッダー ファイル\Scene\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="Life.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerUnit.h">
+      <Filter>ヘッダー ファイル\Scene\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayObjectManager.h">
+      <Filter>ヘッダー ファイル\Scene\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitManager.h">
+      <Filter>ヘッダー ファイル\Scene\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="IMenu.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseMenu.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuStart.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuContinue.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

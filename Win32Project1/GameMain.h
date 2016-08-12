@@ -13,8 +13,9 @@ private:
 	GameMain& operator=(const GameMain& gameMain) {}
 	~GameMain();
 
-	std::unique_ptr<FPS> mFps;
-	std::unique_ptr<CSceneManager> mSceneMgr;
+	std::unique_ptr<FPS> mFps;					//FPS
+	std::unique_ptr<CSceneManager> mSceneMgr;	//シーン管理クラス
+	std::shared_ptr<Input> mInput;				//入力管理クラス
 
 public:
 	// インスタンスにアクセス
